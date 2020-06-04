@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+#logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.globalHeader {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  min-width: 200px;
+}
+.searchFrom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  #logo {
+    margin-top: 20px;
+  }
+  .searchFrom {
+    padding: 1px 2px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .searchFrom > button {
+    width: auto;
+  }
+  .globalMain {
+    margin-top: 50px;
+  }
+  #panda {
+    width: 100px;
+    border-radius: 20px;
+  }
+  .pandaText {
+    display: flex;
+    height: 25px;
+    margin-top: 37px;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgb(32, 33, 36);
+  }
+}
+
+@media (min-width: 500px) {
+  .searchFrom {
+    padding: 1px 2px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  .searchFrom > button {
+    width: auto;
+  }
+  .globalMain {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+  }
+  .addButton:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+  }
+  .siteList .site:hover > .close {
+    display: block;
+  }
+  #panda {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .pandaText {
+    flex-wrap: nowrap;
+    margin-top: 85px;
+    margin-left: 20px;
+    font-size: 35px;
+    color: rgb(32, 33, 36);
+  }
+}
+.searchFrom > input {
+  width: 80%;
+  margin-right: 10px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 30px 30px 30px 30px;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+}
+.searchFrom > button {
+  white-space: nowrap;
+  width: auto;
+  padding: 0 28px;
+  border: none;
+  border-radius: 10px;
+  background: #4e6ef2;
+  color: #dddddd;
+  font-size: 16px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.219);
+}
+.searchFrom > button:hover {
+  cursor: pointer;
+}
+.globalMain {
+  display: flex;
+}
+.siteList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+.siteList .site {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
+  position: relative;
+  border-radius: 4px 4px 4px 4px;
+}
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.2);
+}
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.siteList .site > .close {
+  right: 14px;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+.siteList .addButton {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  border-radius: 4px 4px 4px 4px;
+}
+.siteList .addButton .icon {
+  width: 35px;
+  height: 35px;
+}
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.siteList .addButton .iconWrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.2);
+}

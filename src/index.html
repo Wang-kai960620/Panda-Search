@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,
+      maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>前端导航项目</title>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="logo">
+          <div  id="panda" >
+            <img src="./imgs/logo.jpg" alt="">
+          </div>
+          <div class="pandaText">Panda Search</div>
+          </div>   
+    <div class="globalHeader">
+      <form class="searchFrom" method = "get"
+      action="https://www.google.com/search" target="_blank">
+        <input name="q"type="text" />
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <main class="globalMain">
+      <ul class="siteList">
+        <li>
+          <a href="https://www.iconfont.cn/">
+            <div class="site">
+              <div class="logo">
+                <img src="A" alt="">
+              </div>
+              <div class="link">icon font</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.bilibili.com/">
+          <div class="site">
+            <div class="logo">
+              <img src="b" alt="">
+            </div>
+            <div class="link">mdn文档</div>
+          </div>
+        </a>
+        </li>
+        <li  class="last">
+          <div class="addButton">
+            <div class="iconWrapper">
+              <svg class="icon">
+                <use xlink:href="#icon-tianjia"></use>
+              </svg>
+            </div>
+            <div class="text">
+              添加快捷方式
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script src=//at.alicdn.com/t/font_1859617_gvq7j1rpw7h.js></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
