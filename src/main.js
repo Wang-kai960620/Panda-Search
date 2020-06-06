@@ -5,14 +5,12 @@ const xObject = JSON.parse(x);
 
 const hashMap = xObject || [
   {
-    logo: "A",
-    logoType: "text",
-    url: "https://www.iconfont.cn/",
+    logo: "https://juejin.im/favicon.ico",
+    url: "https://juejin.im",
   },
   {
-    logo: "b",
-    logoType: "text",
-    url: "https://www.bilibili.com/",
+    logo: "https://www.bilibili.com/favicon.ico",
+    url: "https://www.bilibili.com",
   },
 ];
 const simplifyUrl = (url) => {
@@ -27,7 +25,9 @@ const render = () => {
   hashMap.forEach((node, index) => {
     const $li = $(`<li>
     <div class="site">
-      <div class="logo">${node.logo[0]}</div>
+      <div class="logo">
+      <img src="${node.logo}" class="newLogo"></img>
+      </div>
        <div class="link">${simplifyUrl(node.url)}</div>
         <div class = "close">
          <svg class="icon">
@@ -52,12 +52,11 @@ $(".addButton").on("click", () => {
   if (url.indexOf("http") !== 0) {
     url = "https://" + url;
   }
-  console.log(url);
   hashMap.push({
-    logo: simplifyUrl(url)[0],
-    logoType: "text",
+    logo: url + "/favicon.ico",
     url: url,
   });
+  console.log(hashMap);
   render();
 });
 
