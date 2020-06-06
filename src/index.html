@@ -20,17 +20,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="logo">
-          <div  id="panda" >
-            <img src="./imgs/logo.jpg" alt="">
-          </div>
-          <div class="pandaText">Panda Search</div>
-          </div>   
+    <div class="pandaText">Panda Search</div>
     <div class="globalHeader">
-      <form class="searchFrom" method = "get"
-      action="https://www.google.com/search" target="_blank">
-        <input name="q"type="text" />
-        <button type="submit">搜索</button>
+      <form
+        class="searchFrom"
+        method="get"
+        action="https://www.google.com/search"
+        target="_blank"
+      >
+        <div class="find">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-22"></use>
+          </svg>
+        </div>
+        <input name="q" type="text" autocomplete="off" />
       </form>
     </div>
     <main class="globalMain">
@@ -39,7 +42,7 @@
           <a href="https://www.iconfont.cn/">
             <div class="site">
               <div class="logo">
-                <img src="A" alt="">
+                <img src="A" alt="" />
               </div>
               <div class="link">icon font</div>
             </div>
@@ -47,15 +50,15 @@
         </li>
         <li>
           <a href="https://www.bilibili.com/">
-          <div class="site">
-            <div class="logo">
-              <img src="b" alt="">
+            <div class="site">
+              <div class="logo">
+                <img src="b" alt="" />
+              </div>
+              <div class="link">mdn文档</div>
             </div>
-            <div class="link">mdn文档</div>
-          </div>
-        </a>
+          </a>
         </li>
-        <li  class="last">
+        <li class="last">
           <div class="addButton">
             <div class="iconWrapper">
               <svg class="icon">
@@ -63,13 +66,13 @@
               </svg>
             </div>
             <div class="text">
-              添加快捷方式
+              添加网站
             </div>
           </div>
         </li>
       </ul>
     </main>
-    <script src=//at.alicdn.com/t/font_1859617_gvq7j1rpw7h.js></script>
+    <script src="//at.alicdn.com/t/font_1859617_f1ic8eoa3fj.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
